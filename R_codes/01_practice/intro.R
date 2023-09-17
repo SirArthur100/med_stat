@@ -39,6 +39,8 @@ str(test_table$wt)
 # that we have many numbers chained together in a list
 # next we would like to select a specific element from this list,
 # lets say we want to select the fifth element (:D) from this list of numbers
+
+test_table$wt[5]
 # for this we use the square bracket [] syntax:
 
 test_table$wt[5]
