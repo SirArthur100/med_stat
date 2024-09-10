@@ -1,0 +1,8 @@
+x <- rnorm(100)
+x2 <- rnorm(100, 2)
+stripchart(x, ylim=c(0,1.2), col=2, cex=1, pch=19, method="jitter", jitter=0.1, xlim=c(-4,5))
+stripchart(x2, ylim=c(0,1.2), col=3, cex=1, pch=19, method="jitter", jitter=0.1, add=T)
+hist(x,col=rgb(1,0,0,0.5), freq = FALSE, border=T, add=T, breaks=10)
+hist(x2,col=rgb(0,1,0,0), freq = FALSE, border=T, add=T, breaks=10)
+lines(density(x), lwd=5, col=2)
+lines(density(x2), lwd=5, col=3)
